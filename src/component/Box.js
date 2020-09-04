@@ -5,8 +5,15 @@ class Box extends React.Component {
         return (
             <>
                 <div className={'wrapper'}>
-                    <div className={'box'}>
-                        <button>Change Color</button>
+                    <div
+                        style={{
+                            backgroundColor: `${this.props.color}`,
+                        }}
+                        className={'box'}>
+                        <button
+                            onClick={this.props.handleClick}
+                        >Change Color
+                        </button>
                     </div>
                 </div>
             </>
